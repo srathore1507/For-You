@@ -1,0 +1,944 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Jyotiiii ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --night: #07091d;
+  --pink: #ff2f70;
+  --red: #ff1744;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  background: var(--night);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ==========================
+   WELCOME PAGE
+========================== */
+
+.welcome {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--night);
+  overflow: hidden;
+
+  transition:
+    opacity 1.2s ease,
+    visibility 1.2s ease;
+}
+
+.welcome.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.welcome-picture {
+  position: relative;
+
+  width: min(100vw, 177.586dvh);
+  aspect-ratio: 1648 / 928;
+  max-height: 100dvh;
+}
+
+.welcome-picture > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Real interactive controls over the picture */
+
+.welcome-form {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+}
+
+.name-input {
+  position: absolute;
+
+  left: 37.7%;
+  top: 44.7%;
+  width: 24.9%;
+  height: 7.1%;
+
+  border: 0;
+  border-radius: 999px;
+  outline: none;
+
+  background: transparent;
+  color: white;
+  text-align: center;
+
+  font: 400 clamp(10px, 1.25vw, 20px)
+        "Poppins", sans-serif;
+
+  caret-color: #ff9fc5;
+  padding: 0 12px;
+}
+
+.name-input::placeholder {
+  color: transparent;
+}
+
+.name-input:not(:placeholder-shown) {
+  background: #171329;
+  box-shadow: inset 0 0 12px #120a24;
+}
+
+.name-input:focus {
+  outline: 2px solid #ffc0df;
+  outline-offset: -2px;
+}
+
+.open-button {
+  position: absolute;
+
+  left: 41.8%;
+  top: 53.1%;
+  width: 16.5%;
+  height: 6.7%;
+
+  border: none;
+  border-radius: 999px;
+
+  background: transparent;
+  cursor: pointer;
+}
+
+.open-button:focus-visible {
+  outline: 3px solid white;
+}
+
+.name-error {
+  position: absolute;
+
+  left: 27%;
+  top: 61%;
+  width: 46%;
+
+  margin: 0;
+  color: #ffcedf;
+
+  font-size: clamp(10px, 1.25vw, 17px);
+  text-align: center;
+
+  text-shadow: 0 2px 7px black;
+}
+
+/* ==========================
+   MAIN ROMANTIC SCENE
+========================== */
+
+.scene {
+  position: relative;
+  isolation: isolate;
+
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  padding:
+    max(30px, env(safe-area-inset-top))
+    6%
+    max(24px, env(safe-area-inset-bottom));
+
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+
+  background: var(--night);
+}
+
+.background img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: center;
+}
+
+.background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(3, 5, 20, .48),
+    rgba(3, 5, 20, .08) 45%,
+    rgba(3, 5, 20, .60)
+  );
+}
+
+/* ==========================
+   GLOWING TITLE
+========================== */
+
+.heading {
+  position: relative;
+  z-index: 5;
+
+  width: 100%;
+  text-align: center;
+}
+
+.heading h1 {
+  margin: 0;
+
+  font-family: "Great Vibes", cursive;
+  font-size: clamp(2.8rem, 7vw, 6.5rem);
+  font-weight: normal;
+  line-height: 1.2;
+
+  color: #fff3fa;
+
+  animation: romanticGlow 3.5s infinite;
+}
+
+@keyframes romanticGlow {
+  0%, 100% {
+    opacity: 1;
+
+    text-shadow:
+      0 0 12px white,
+      0 0 25px #ff9ac4,
+      0 0 45px #ff5797;
+  }
+
+  45% {
+    opacity: .75;
+    text-shadow: 0 0 10px #ffb2d1;
+  }
+
+  50% {
+    opacity: 1;
+
+    text-shadow:
+      0 0 18px white,
+      0 0 40px #ff78ac;
+  }
+}
+
+/* ==========================
+   RIGHT-SIDE ROMANTIC QUOTES
+========================== */
+
+.message {
+  position: relative;
+  z-index: 5;
+
+  width: 45%;
+  max-width: 650px;
+
+  justify-self: end;
+  align-self: center;
+
+  margin-left: auto;
+  margin-right: 2%;
+
+  padding: 20px 8px;
+  text-align: right;
+}
+
+.portfolio-typing {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.8rem);
+  font-weight: 400;
+  line-height: 1.4;
+
+  color: white;
+  text-align: right;
+  text-shadow: 0 2px 14px black;
+
+  overflow-wrap: break-word;
+}
+
+.typed-line {
+  display: block;
+  min-height: 1.4em;
+  text-align: right;
+}
+
+.pink-line {
+  color: var(--pink);
+}
+
+.red-line {
+  color: var(--red);
+
+  text-shadow:
+    0 0 12px rgba(255, 23, 68, .65);
+}
+
+.typing-cursor {
+  display: inline-block;
+
+  width: 5px;
+  height: .95em;
+  margin-left: 2px;
+
+  background: var(--pink);
+  vertical-align: -0.12em;
+
+  animation: blink .7s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ==========================
+   FLOATING HEARTS AND STARS
+========================== */
+
+.stars,
+.hearts {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.stars {
+  z-index: -1;
+}
+
+.hearts {
+  z-index: 2;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+
+  width: 2px;
+  height: 2px;
+
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 7px white;
+
+  animation: twinkle 3s infinite alternate;
+}
+
+@keyframes twinkle {
+  from {
+    opacity: .2;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.heart {
+  position: absolute;
+  bottom: -40px;
+
+  color: #ff9dc8;
+  text-shadow: 0 0 12px #ff6ba5;
+
+  animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  20%, 80% {
+    opacity: .8;
+  }
+
+  100% {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
+
+/* ==========================
+   MUSIC CONTROL
+========================== */
+
+.controls {
+  position: relative;
+  z-index: 6;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  padding-top: 12px;
+}
+
+.music-button {
+  padding: 12px 20px;
+
+  border-radius: 30px;
+  border: 1px solid #ffd3e4aa;
+
+  background: #ff82b444;
+  color: white;
+
+  font: 400 14px "Poppins", sans-serif;
+  cursor: pointer;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media (max-width: 600px) {
+  .scene {
+    padding: 30px 4% 20px;
+  }
+
+  .heading h1 {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+  }
+
+  .message {
+    width: 56%;
+    margin-right: 0;
+    padding: 10px 0;
+  }
+
+  .portfolio-typing {
+    font-size: clamp(.95rem, 3.8vw, 1.4rem);
+    line-height: 1.5;
+  }
+
+  .music-button {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .scene {
+    padding: 45px 5% 30px;
+  }
+
+  .message {
+    width: 48%;
+    margin-right: 1%;
+  }
+
+  .portfolio-typing {
+    font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+  }
+}
+
+@media (min-width: 1025px) {
+  .scene {
+    padding: 50px 6% 35px;
+  }
+}
+
+@media (max-height: 500px) {
+  .scene {
+    min-height: 550px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heading h1,
+  .star,
+  .heart,
+  .typing-cursor {
+    animation: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ==========================
+     WELCOME PAGE
+========================== -->
+
+<div class="welcome" id="welcome">
+
+  <div class="welcome-picture">
+
+    <img
+      src="welcome.png"
+      alt="Romantic welcome scene with roses, candles and a love letter"
+    >
+
+    <form class="welcome-form" id="nameForm" novalidate>
+
+      <label for="visitorName" style="
+        position:absolute;
+        width:1px;
+        height:1px;
+        overflow:hidden;
+        clip-path:inset(50%);
+      ">
+        To open my heart, enter your name
+      </label>
+
+      <input
+        class="name-input"
+        type="text"
+        id="visitorName"
+        placeholder="Your beautiful name..."
+        autocomplete="off"
+        maxlength="40"
+        aria-describedby="nameError"
+      >
+
+      <button
+        class="open-button"
+        type="submit"
+        aria-label="Open My Heart">
+      </button>
+
+      <p
+        class="name-error"
+        id="nameError"
+        role="status"
+        aria-live="polite">
+      </p>
+
+    </form>
+
+  </div>
+</div>
+
+<!-- ==========================
+     MAIN ROMANTIC SCENE
+========================== -->
+
+<main class="scene">
+
+  <div class="background">
+    <img
+      src="night-sky.png"
+      alt="A couple beneath a romantic starry night sky"
+    >
+  </div>
+
+  <div class="stars" id="stars"></div>
+  <div class="hearts" id="hearts"></div>
+
+  <header class="heading">
+    <h1>
+      Tu me manques<br>
+      Jyotiiii ❤️
+    </h1>
+  </header>
+
+  <section class="message">
+    <div class="portfolio-typing">
+      <span id="typedText"></span>
+      <span
+        class="typing-cursor"
+        id="typingCursor"
+      ></span>
+    </div>
+  </section>
+
+  <div class="controls">
+    <button
+      class="music-button"
+      id="musicButton"
+      onclick="toggleMusic()">
+      🎵 Play music
+    </button>
+  </div>
+
+</main>
+
+<audio id="bgMusic" preload="auto">
+  <source src="ghost.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+/* ==========================
+   ONLY JYOTIIII CAN OPEN
+========================== */
+
+const nameForm =
+  document.getElementById("nameForm");
+
+const nameInput =
+  document.getElementById("visitorName");
+
+const nameError =
+  document.getElementById("nameError");
+
+nameForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+  checkName();
+});
+
+nameInput.addEventListener("input", function() {
+  nameError.textContent = "";
+});
+
+function checkName() {
+  const name = nameInput.value.trim().toLowerCase();
+
+  if (!name) {
+    nameError.textContent =
+      "Please enter your name first ❤️";
+    return;
+  }
+
+  if (name === "jyotiiii") {
+    nameError.textContent = "";
+    openHeart();
+  } else {
+    nameError.textContent =
+      "Sorry, this heart belongs only to Jyotiiii ❤️";
+  }
+}
+
+/* ==========================
+   MUSIC STARTS FROM 1:04
+========================== */
+
+const music =
+  document.getElementById("bgMusic");
+
+const musicButton =
+  document.getElementById("musicButton");
+
+const START_TIME = 64;
+
+music.volume = 0.65;
+
+let opened = false;
+let musicReady = false;
+let musicRequested = false;
+
+function seekToStart() {
+  if (
+    Number.isFinite(music.duration) &&
+    music.duration > START_TIME
+  ) {
+    music.currentTime = START_TIME;
+    return true;
+  }
+
+  return false;
+}
+
+music.addEventListener("loadedmetadata", () => {
+  musicReady = true;
+  seekToStart();
+});
+
+async function startMusic() {
+  try {
+    musicRequested = true;
+
+    if (musicReady) {
+      if (music.currentTime < START_TIME) {
+        seekToStart();
+      }
+    } else {
+      music.load();
+
+      await new Promise((resolve, reject) => {
+        if (music.readyState >= 1) {
+          resolve();
+          return;
+        }
+
+        music.addEventListener(
+          "loadedmetadata",
+          resolve,
+          { once: true }
+        );
+
+        music.addEventListener(
+          "error",
+          reject,
+          { once: true }
+        );
+      });
+
+      seekToStart();
+    }
+
+    if (!musicRequested) return;
+
+    await music.play();
+
+  } catch (error) {
+    console.error("Music playback:", error);
+    musicButton.textContent = "🎵 Play music";
+  }
+}
+
+function toggleMusic() {
+  if (music.paused) {
+    startMusic();
+  } else {
+    musicRequested = false;
+    music.pause();
+  }
+}
+
+music.addEventListener("ended", () => {
+  if (!musicRequested) return;
+
+  seekToStart();
+  startMusic();
+});
+
+music.addEventListener("play", () => {
+  musicButton.textContent = "⏸ Pause music";
+});
+
+music.addEventListener("pause", () => {
+  musicButton.textContent = "🎵 Play music";
+});
+
+music.addEventListener("error", () => {
+  musicButton.textContent = "Music unavailable";
+});
+
+/* ==========================
+   TWO ROMANTIC TYPING MESSAGES
+========================== */
+
+const messages = [
+  [
+    "Every Rose has its thorns.",
+    "Show me yours and",
+    "I'll show you the hands",
+    "willing to bleed."
+  ],
+  [
+    "Even when we're apart,",
+    "you're always in my heart.",
+    "I can't wait to see you... ❤️"
+  ]
+];
+
+const typedText =
+  document.getElementById("typedText");
+
+const cursor =
+  document.getElementById("typingCursor");
+
+let typingStarted = false;
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function beginTyping() {
+  if (typingStarted) return;
+
+  typingStarted = true;
+
+  while (true) {
+    for (
+      let messageIndex = 0;
+      messageIndex < messages.length;
+      messageIndex++
+    ) {
+      const messageLines = messages[messageIndex];
+
+      cursor.remove();
+      typedText.replaceChildren();
+
+      const lineElements = [];
+
+      // TYPE EACH LINE
+      for (let i = 0; i < messageLines.length; i++) {
+        const line = document.createElement("span");
+        line.className = "typed-line";
+
+        if (messageIndex === 0 && i >= 2) {
+          line.classList.add("red-line");
+        }
+
+        if (messageIndex === 1 && i === 2) {
+          line.classList.add("pink-line");
+        }
+
+        typedText.appendChild(line);
+        lineElements.push(line);
+
+        for (const character of messageLines[i]) {
+          cursor.remove();
+
+          line.appendChild(
+            document.createTextNode(character)
+          );
+
+          line.appendChild(cursor);
+
+          await sleep(65);
+        }
+
+        await sleep(400);
+      }
+
+      // SHOW FULL MESSAGE FOR 2 SECONDS
+      await sleep(2000);
+
+      // ERASE LETTER BY LETTER
+      for (
+        let i = lineElements.length - 1;
+        i >= 0;
+        i--
+      ) {
+        const line = lineElements[i];
+        const characters = Array.from(messageLines[i]);
+
+        for (
+          let j = characters.length - 1;
+          j >= 0;
+          j--
+        ) {
+          line.textContent =
+            characters.slice(0, j).join("");
+
+          line.appendChild(cursor);
+
+          await sleep(35);
+        }
+
+        line.remove();
+
+        await sleep(150);
+      }
+
+      // WAIT BEFORE NEXT QUOTE
+      await sleep(700);
+    }
+  }
+}
+
+/* ==========================
+   OPEN HEART
+========================== */
+
+function openHeart() {
+  if (opened) return;
+
+  opened = true;
+
+  startMusic();
+  beginTyping();
+
+  const welcome =
+    document.getElementById("welcome");
+
+  welcome.classList.add("hidden");
+
+  setTimeout(() => {
+    welcome.style.display = "none";
+  }, 1300);
+}
+
+/* ==========================
+   TWINKLING STARS
+========================== */
+
+const stars =
+  document.getElementById("stars");
+
+for (let i = 0; i < 100; i++) {
+  const star = document.createElement("span");
+
+  star.className = "star";
+
+  star.style.left =
+    Math.random() * 100 + "%";
+
+  star.style.top =
+    Math.random() * 100 + "%";
+
+  star.style.animationDelay =
+    Math.random() * 5 + "s";
+
+  star.style.animationDuration =
+    (2 + Math.random() * 4) + "s";
+
+  stars.appendChild(star);
+}
+
+/* ==========================
+   FLOATING HEARTS
+========================== */
+
+const hearts =
+  document.getElementById("hearts");
+
+for (let i = 0; i < 22; i++) {
+  const heart = document.createElement("span");
+
+  heart.className = "heart";
+
+  heart.textContent =
+    Math.random() > .5 ? "♥" : "♡";
+
+  heart.style.left =
+    Math.random() * 100 + "%";
+
+  heart.style.fontSize =
+    (12 + Math.random() * 18) + "px";
+
+  heart.style.animationDuration =
+    (7 + Math.random() * 8) + "s";
+
+  heart.style.animationDelay =
+    (-Math.random() * 15) + "s";
+
+  hearts.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
